@@ -53,7 +53,7 @@ describe('Options method test', () => {
         done();
     })
 
-    test('non-admin user with valid access token can view all APIs except the /api/v1/users API', async (done) => {
+    test.skip('non-admin user with valid access token can view all APIs except the /api/v1/users API', async (done) => {
         await request(server)
             .post('/users/register')
             .send(userRegisterMock)
